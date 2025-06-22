@@ -140,15 +140,18 @@ button:hover {
 
 /* HOME */
 #home {
-    background-image: url('img/ebuy-banner.jpg');
+    background-image: url('img/ebuy-banner2.jpg');
     width: 100%;
     height: 100vh;
     background-size: cover;
-    background-position: top 60px center;
+    background-position: top 80px center;
     display: flex;
-    flex-direction: column;
+    align-items: flex-end;
     justify-content: center;
-    align-items: flex-start;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: end;
+
 }
 #home span{
     color: coral;
@@ -245,3 +248,19 @@ button:hover {
     transform: translate(0);
     opacity: 1;
 }
+
+/* Parallax Banner */
+#banner {
+    background-image: url('img/banner/banner1.jpg');
+    width: 100%;
+    height: 60vh;
+    background-size: cover;
+    background-position: top 150px center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
