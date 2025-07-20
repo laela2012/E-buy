@@ -54,16 +54,19 @@ hr {
 }
 
 button {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     font-weight: 700;
-    outline: none;
     border: none;
-    background-color: #1d1d1d;
     color: aliceblue;
-    padding: 13px 30px;
     text-transform: uppercase;
     cursor: pointer;
-    transition: 0.3s ease;
+    text-align: center;
+    border-radius: 10px;
+    align-self: center;
+    padding: 17px 0;
+    line-height: 1em;
+    transition: transform .35s, box-shadow .35s;
+    box-shadow: 0 2px 6px #f4263e29;
 }
 
 button:hover {
@@ -249,9 +252,21 @@ button:hover {
 }
 
 /* View more Button */
+    button:hover {
+        background-color: #fb774b;
+        transform: translateY(-2px);
+        box-shadow: 0 8px 20px #fde4db
+    }
+    button:focus {
+        border: none;
+    }
     .more-btn {
         background: #fb774b;
-        width: 300px;
+        width: 250px;
+    }
+    .more-button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 20px #f4263e4d;
     }
 
     /* object fit: cover */
@@ -265,14 +280,16 @@ button:hover {
 }
 
 .product img {
-    transition: 0.3s all;
-    border: 1px solid #ededef;
+    /* border: 1px solid #ededef; */
     height: 400px;
     width: 400px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     object-fit: contain;
     background-color: #ffffff;
+    text-decoration: none;
+    transition: transform .35s, border-color .35s;
+    box-shadow: 0 3px 10px #edeaea;
 }
 
 .product:hover img {
