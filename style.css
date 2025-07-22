@@ -68,6 +68,14 @@ button {
     transition: transform .35s, box-shadow .35s;
     box-shadow: 0 2px 6px #f4263e29;
 }
+button:focus {
+    outline: 0;
+}
+
+button a, button a:hover {
+    text-decoration: none;
+    color: aliceblue;
+}
 
 button:hover {
     background-color: #3a3833;
