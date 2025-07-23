@@ -80,6 +80,70 @@ button a, button a:hover {
 button:hover {
     background-color: #3a3833;
 }
+
+/* Show More/Less */
+#more {
+    display: none;
+}
+#moreBtn {
+    font-size: 12px;
+    font-weight: 500;
+    color: #5f6163;
+    text-transform: lowercase;
+    cursor: pointer;
+    border-radius: unset;
+    align-self: center;
+    padding: 5px 10px;
+    transition: unset;
+    box-shadow: unset;
+    background-color: transparent;
+}
+
+/* MODAL */
+.modal-content {
+    background-color: transparent;
+}
+.modal-header {
+    padding: 10px;
+    justify-content: flex-end;
+    line-height: 0;
+    height: 2rem;
+}
+
+.modal-header .btn-close {
+    color: #fff;
+    border: none;
+    text-transform: uppercase;
+    border-radius: unset;
+    line-height: unset;
+    transition: none;
+    box-shadow: none;
+    background: transparent;
+}
+
+.modal-body {
+    background: white;
+    width: 50rem;
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    position: relative;
+}
+
+.modal-body .product img {
+    height: 500px;
+    width: 330px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    object-fit: contain;
+    background-color: #ffffff;
+    text-decoration: none;
+    transition: transform .35s, border-color .35s;
+    box-shadow: 0 3px 10px #edeaea;
+}
+
+
+
 /* Navbar */
 .navbar {
     font-size: 16px;

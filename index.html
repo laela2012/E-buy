@@ -206,10 +206,10 @@
               </div>
             </div>
             <hr class="mx-auto">
-            <h5 class="p-name">Womens Boho Maxi Dresses 2025 Summer V Neck Puff Sleeve Floral Flowy Swing Casual Long Dress</h5>
+            <h5 class="p-name">TEST MODAL - Womens Boho Maxi Dresses 2025 Summer V Neck Puff Sleeve Floral Flowy Swing Casual Long Dress</h5>
             <h4 class="p-price">$35.00</h4>
             <div class="eye-cart">
-              <button class="icon-btn"><i class="fal fa-eye" data-toggle="tooltip" title="Quick View"></i></button>
+              <button class="icon-btn" data-bs-toggle="modal" data-bs-target="#quickView"><i class="fal fa-eye" data-toggle="tooltip" title="Quick View"></i></button>
               <button class="icon-btn"><i class="fal fa-shopping-cart" data-toggle="tooltip" title="Add to Cart"></i></button>
             </div>
           </div>
@@ -2310,15 +2310,92 @@
          </div>
        </footer>
 
+       <!-- Modal-quick View -->
+     <div class="modal fade" id="quickView">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">x</button>
+          </div>
+
+          <div class="modal-body">
+              <div class="product">
+                <img src="img/clothes/dresses/fm1.jpg" alt="">
+              </div>
+            <div class="info">
+                <h4 class="title">Womens Boho Maxi Dresses 2025 Summer V Neck Puff Sleeve Floral Flowy Swing Casual Long Dress</h4>
+                <div class="star">
+                  <span>5.0</span>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <span>99</span>
+              </div>
+                <p>To Buy, Select a size</p>
+                <select class="my-1">
+                    <option>Select Size</option>
+                    <option>S</option>
+                    <option>M</option>
+                    <option>L</option>
+                    <option>XL</option>
+                    <option>XXL</option>
+                </select>
+                <h2><span>$</span>39<span>00</span></h2>
+                <h5 class="my-3">Product Description</h5>
+                <hr>
+                <ul style="list-style-type:circle" class="ml-3">
+                <li>Fit Type - Loose.</li>
+                <li>Size - S=US(4-6), M=US(8-10), L=US(12-14), XL=US(16-18), XXL=US(19-21). More details in rich description.</li>
+                <span id="dots">...</span><span id="more">
+                <li>Material - 100% Rayon. Stretch - Medium ，Thickness - Medium，Softness - High.</li>
+                <li>Washing - Machine washable, hang to dry in the shade. Padded cloth ironing.
+                </li>
+                <li>Features - Women's casual floral dress, puff sleeveless, v neck, button. This women's Shirts maxi beach sundress perfect for beach,travel, work, daily, casual and party, vacation.</li>
+                </span>
+                <button onclick="showMore()" id="moreBtn">Show more</button>
+                </ul>
+                <div class="text-center pb-2">
+                  <button class="more-btn"><a href="#">See All Details</a></button>
+                </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+     </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
     <script>
       $(document).ready(function(){
         $('[data-toggle="tooltip"]').tooltip();   
       });
     </script>
+
+    <script>
+      function showMore() {
+        var dots = document.getElementById("dots");
+        var moreText = document.getElementById("more");
+        var btnText = document.getElementById("moreBtn");
+
+        if (dots.style.display === "none") {
+          dots.style.display = "inline";
+          btnText.innerHTML = "Show More"; 
+          moreText.style.display = "none";
+        } else {
+          dots.style.display = "none";
+          btnText.innerHTML = "Show Less"; 
+          moreText.style.display = "inline";
+        }
+      }
+</script>
 
 </body>
 </html>
