@@ -16,40 +16,14 @@
         .small-img-group {
             display: flex;
             justify-content: space-between;
+            gap: 6px;
         }
-        .small-img-col {
-            flex-basis: 24%;
-            cursor: pointer;
-        }
+        
         .small-img-col:hover {
             opacity: 0.8;
         }
 
-        .sproduct select {
-            display: block;
-            padding: 5px 10px;
-            font-size: 15px;
-        }
-
-        .sproduct input {
-            width: 50px;
-            height: 40px;
-            padding-left: 10px;
-            font-size: 15px;
-            margin-right: 10px;
-        }
-
-        .sproduct input:focus {
-            outline: none;
-        }
-
-        .buy-btn {
-            background-color: coral;
-            opacity: 1;
-            cursor: pointer;
-            transition: 0.3s all;
-            border: none;
-        }
+        
 
      </style>
 
@@ -89,53 +63,94 @@
     </nav>
 
     <!-- single product description -->
-    <section class="container sproduct my-5 pt-5">
-        <div class="row mt-5">
+    <section class="sproduct my-5 pt-5">
+        <div class="container">
+          <div class="row my-4">
             <!-- product images -->
-            <div class="col-lg-5 col-md-12 col-12">
-                <img class="img-fluid w-100 pb-1" src="img/clothes/new1.jpg" id="MainImg" alt="">
+            <div class="col-lg-6 col-md-12 col-12">
+              <div class="pimages text-center">
+                <img class="img-fluid pb-1" style="width: 450px; object-fit: cover;" src="img/clothes/dresses/fm1.jpg" id="MainImg" alt="">
                 <!-- small image group -->
-                <div class="small-img-group">
+                <div class="small-img-group my-3">
                     <div class="small-img-col">
-                        <img src="img/clothes/new1.jpg" width="100%" class="small-img" alt="">
+                        <img src="img/clothes/dresses/fm1.jpg" width="100%" class="small-img" alt="">
                     </div>
                     <div class="small-img-col">
-                        <img src="img/clothes/new5.jpg" width="100%" class="small-img" alt="">
+                        <img src="img/clothes/dresses/fm2.jpg" width="100%" class="small-img" alt="">
                     </div>
                     <div class="small-img-col">
-                        <img src="img/clothes/new3.jpg" width="100%" class="small-img" alt="">
+                        <img src="img/clothes/dresses/fm3.jpg" width="100%" class="small-img" alt="">
                     </div>
                     <div class="small-img-col">
-                        <img src="img/clothes/new4.jpg" width="100%" class="small-img" alt="">
+                        <img src="img/clothes/dresses/fm4.jpg" width="100%" class="small-img" alt="">
                     </div>
                 </div>
+              </div>
             </div>
             <!-- product details -->
             <div class="col-lg-6 col-md-12 col-12">
-                <h6>Home / Office Look</h6>
-                <h3 class="py-4">Dressy 3/4 Sleeve Blazer</h3>
-                <h2>$139.00</h2>
-                <select class="my-3">
-                    <option>Select Size</option>
-                    <option>S</option>
-                    <option>M</option>
-                    <option>L</option>
-                    <option>XL</option>
-                    <option>XXL</option>
-                </select>
-                <input type="number" value="1">
-                <button class="buy-btn">Add To Cart</button>
-                <h4 class="my-5">Product Details</h4>
-                <span>Nam tempus turpis at metus scelerisque placerat nulla deumantos solicitud felis. Pellentesque diam dolor, elementum etos lobortis des mollis ut risus. Sedcus faucibus an sullamcorper mattis drostique des commodo pharetras loremos. Donec pretium egestas sapien et mollis.</span>
+              <div class="product-details">
+                  <h6><span><a href="index.html">Home</a></span> > <span><a href="dresses.html">Dresses</a></span></h6>
+                  <h3 class="pname mt-3">Women’s Summer Loose Boho Flowy Wrap V Neck 3/4 Sleeve Floral Print Slit Beach Wedding Guest Long Maxi Dresses</h3>
+                  <div class="star">
+                    <span>5.0</span>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span>99</span>
+                  </div>
+                  <hr>
+                    <p style="vertical-align: middle;"><span>Price:  </span>$39.00</p>
+                    <div class="psize">
+                      <select class="my-3"value="M">
+                      <option>Select Size</option>
+                      <option>S</option>
+                      <option>M</option>
+                      <option>L</option>
+                      <option>XL</option>
+                      <option>XXL</option>
+                    </select>
+                    <button class="sizechart-btn">Size Chart  <span><i class="fas fa-arrow-right"></i></span></button>
+                    </div>
+                  <input type="number" placeholder="Quantity">
+                  <h4>Product Details</h4>
+                  <hr>
+                  <table class="pdetails">
+                    <tr>
+                      <td class="left">Fabric type</td>
+                      <td>Shell: 100% polyester; Linning: 97%polyester 3%spandex</td>
+                    </tr>
+                    <tr>
+                      <td class="left">Care instructions</td>
+                      <td>Machine Wash</td>
+                    </tr>
+                    <tr>
+                      <td class="left">Closure type</td>
+                      <td>Pull On</td>
+                    </tr>
+                    <tr>
+                      <td class="left">Neck style</td>
+                      <td>V-Neck</td>
+                    </tr>
+                  </table>
 
-                <h4 class="my-4">Donec pretium egestas</h4>
-                <ul style="list-style-type:circle" class="ml-3">
-                <li>Comodous in tempor ullamcorper miaculis.</li>
-                <li>Pellentesque vitae neque mollis urna mattis laoreet.</li>
-                <li>Divamus sit amet purus justo.</li>
-                <li>Proin molestie egestas orci ac suscipit risus posuere loremous.</li>
-                </ul>
+                  <h4>About this item</h4>
+                  <hr>
+                  <ul style="list-style-type:circle" class="ml-3">
+                  <li>Size：S=US(4-6), M=US(8-10), L=US(12-14), XL=US(16-18), XXL=US(20-22)</li>
+                  <li>Lined - lined length to mid thigh. The dress length to floor. All colors have lined，not see through.</li>
+                  <li>Features - this kimono maxi dress features wrap v neck top，3/4 oversized sleeves，elastic waist with a belt，high slit to lined，maxi length，loose fit，floral printed.</li>
+                  <li>Occasion - this boho dress perfect for party，travel ，beach，vacation，daily and so on. Bump and nursing friendly .</li>
+                  <li>Wash care - hand wash recommended. hang to dry.</li>
+                  </ul>
+                  <div class="text-center my-5">
+                      <button class="buy-btn">Add To Cart</button>
+                  </div>
+              </div>
             </div>
+          </div>
         </div>
     </section>
     <!-- Products Featured -->

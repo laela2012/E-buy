@@ -36,7 +36,118 @@ h5 {
 }
 
 h6 {
-  color: #d8d8d8;
+    font-size: 13px;
+}
+.sproduct select {
+    display: block;
+    padding: 5px 10px;
+    font-size: 15px;
+    width: 130px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 15px;
+    margin-right: 10px;
+}
+       
+.sproduct input {
+    width: 200px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+.sproduct input:focus,
+.sproduct select:focus {
+    outline: none;
+}
+
+.pimages .small-img-col {
+    border: 1px solid #f1e7e7;
+}
+.product-details .small-img-col {
+    flex-basis: 24%;
+    cursor: pointer;
+    gap: 4px;
+}
+
+.product-details .small-img-col .small-img {
+    height: 150px;
+    object-fit: contain;
+}
+.product-details .pdetails .left{
+    width: 170px;
+    vertical-align: top;
+    font-weight: 500;
+}
+.product-details p{
+    font-size: 24px;
+    font-weight: 400;
+    color: #cb1616;
+    margin-bottom: 0;
+}
+
+.product-details p span {
+    color: #565959;
+    font-size: 14px;
+    vertical-align: super;
+}
+
+.product-details .buy-btn {
+    background-color: #fb774b;
+    opacity: 1;
+    cursor: pointer;
+    transition: 0.3s all;
+    border: none;
+    padding: 14px 20px;
+    width: 250px;
+}
+
+.product-details .pname {
+    font-weight: 500;
+    word-spacing: 2px;
+}
+
+.product-details .star {
+    padding: 0;
+}
+.product-details .psize {
+    display: flex;
+    gap: 10px;
+}
+
+.product-details .sizechart-btn {
+    font-size: 14px;
+    border: none;
+    color: #3F51B5;
+    padding: 0;
+    line-height: 0;
+    box-shadow: unset;
+    text-transform: math-auto;
+    font-weight: 500;
+    background-color: transparent;
+}
+
+.product-details h4 {
+    margin: 40px 0 10px;
+}
+
+
+
+h6 a {
+    color: #565959;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+h6 a:hover {
+    color: #565959;
+}
+
+.price {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #cb1616;
 }
 
 hr {
@@ -443,6 +554,10 @@ button:hover {
     display: -webkit-box;
     -webkit-line-clamp: 2;
     overflow: hidden;
+}
+.product .p-name a{
+    color: #1d1d1d;
+    text-decoration: none;
 }
 .product .eye-cart {
     transition: opacity .4s ease;
