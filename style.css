@@ -130,6 +130,7 @@ button:hover {
     position: relative;
 }
 
+
 .modal-body .product img {
     height: 500px;
     width: 330px;
@@ -142,7 +143,43 @@ button:hover {
     box-shadow: 0 3px 10px #edeaea;
 }
 
+.modal-body .info select {
+    display: block;
+    padding: 5px 10px;
+    font-size: 15px;
+}
 
+.modal-body .info select:focus {
+    border: none;
+}
+
+.modal-body .info p,
+.modal-body .info span {
+    font-size: 13px;
+    padding: 0 0 10px;
+    margin: 0;
+}
+
+.modal-body .info p span {
+    font-weight: 700;
+}
+.modal-body .info li {
+    font-size: 13px;
+}
+.modal-body .info h2 {
+    padding: 10px 0 0;
+    font-weight: 500;
+}
+.modal-body .info h2 span {
+    vertical-align: text-top;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.modal-body .info h5 {
+    font-weight: 500;
+    margin-top: 20px;
+}
 
 /* Navbar */
 .navbar {
